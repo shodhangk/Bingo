@@ -3,8 +3,9 @@
 
 <div class="panel panel-default">
   <% @gameroom.players.each do |player| %>
-
-    <%= player.username%>
+  <span style="padding:10px;line-height:24px;color:#467;">
+      <%= player.username%>
+  </span>
   <%end%>
 </div>
 
