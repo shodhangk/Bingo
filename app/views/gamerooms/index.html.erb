@@ -1,0 +1,17 @@
+<div class="row col-md-8 col-md-offset-2" id="gameroom-title">
+  <h1>Gamerooms</h1>
+</div>
+
+<div class="row col-md-8 col-md-offset-2" id="gamerooms">
+  <%= render partial: 'gameroom_form', locals: {gameroom: @gameroom} %>
+  <div id="gameroom-errors">
+    
+  </div>
+    <ul id="gameroom-index"> 
+  <% if @gamerooms.any? %>
+      <%= render @gamerooms%>
+  <%else %>
+    </ul>
+    <p>Be the first one to make a gameroom!</p>
+  <% end %>
+</div>

@@ -1,0 +1,5 @@
+<%if current_user.id == gameroom.user_id%>
+  <li><%= link_to gameroom.topic, gameroom_path(gameroom) %></li>
+<% else%>
+<li> <%=gameroom.topic%> <%= link_to 'Join', join_gameroom_path(gameroom), :class => "btn btn-primary" , method: :post %></li>
+<%end%>

@@ -1,0 +1,12 @@
+<div class="row col-md-8 col-md-offset-2">
+  <h1><%= @gameroom.topic %></h1>
+
+<div class="panel panel-default">
+  <% @gameroom.players.each do |player| %>
+
+    <%= player.username%>
+  <%end%>
+</div>
+
+
+</div>

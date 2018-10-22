@@ -1,0 +1,17 @@
+<div class="row col-md-8 col-md-offset-2">
+
+  <h1>Create a Gameroom</h1>
+    <div class="well">
+      <div class="gameroom-form">
+        <%= form_for @gameroom do |f| %>
+          <div class="input-group">
+            <span class="input-group-addon">topic:</span>
+            <%= f.text_field :topic, class: "form-control"%>
+          </div>
+          <%= f.submit class: "btn btn-primary", id: "create-gameroom" %>
+        <% end %>
+      </div>
+    </div>
+
+    <%= render partial: 'layouts/flash_errors'%>
+</div>
